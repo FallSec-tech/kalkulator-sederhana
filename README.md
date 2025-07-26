@@ -1,32 +1,31 @@
-# 🔢 Kalkulator Sederhana 🧠
+# 🧮 Kalkulator Sederhana
 
-[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?style=flat&logo=python)](https://www.python.org/)
-[![GUI with ttkbootstrap](https://img.shields.io/badge/GUI-ttkbootstrap-orange)](https://ttkbootstrap.readthedocs.io/)
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-Kalkulator sederhana berbasis Python dengan tampilan modern menggunakan **ttkbootstrap**.  
-Proyek ini cocok untuk belajar GUI dan logika perhitungan dasar.
-
----
-
-## 📸 Preview Tampilan
-
-<img src="assets/preview.png" alt="Kalkulator GUI" width="400"/>
+Kalkulator GUI modern menggunakan **Python** dan **ttkbootstrap**, dengan fitur:
+- ✅ Tampilan keren & responsif
+- 🌗 Dark Mode
+- 🔊 Suara klik tombol (menggunakan `pygame`)
+- 👨‍💻 Dibuat dengan cinta oleh FallSec-tech (Faiq Naufal)
 
 ---
 
-## ✨ Fitur
-- Penjumlahan, pengurangan, perkalian, pembagian
-- Tampilan GUI modern dan responsif
-- Ikon & logo kalkulator
-- Hover effect pada tombol
-- Validasi input & error handling
+## 🚀 Fitur Unggulan
+- Antarmuka modern dengan tema `flatly`, `darkly`, dll.
+- Hover animasi pada tombol
+- Dukungan suara saat tombol ditekan
+- Logo & ikon kustom
+- Dark mode (ganti tema dengan mudah)
+- Responsive scaling (ukuran menyesuaikan tampilan)
 
 ---
 
-## 🚀 Cara Menjalankan
+## 📷 Tampilan Aplikasi
 
-1. **Clone repo ini:**
-   ```bash
-   git clone https://github.com/FallSec-tech/kalkulator-sederhana.git
-   cd kalkulator-sederhana
+<img src="Asset/screenshot.png" alt="Kalkulator UI" width="300"/>
+
+---
+
+## 💻 Cara Menjalankan
+
+```bash
+pip install ttkbootstrap pygame pillow
+python app.py
