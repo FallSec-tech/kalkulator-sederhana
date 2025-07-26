@@ -20,7 +20,7 @@ Kalkulator GUI modern menggunakan **Python** dan **ttkbootstrap**, dengan fitur:
 
 ## 📷 Tampilan Aplikasi
 
-<img src="Asset/Screenshot.png" alt="Kalkulator UI" width="300"/>
+<img src="Asset/Screenshot .png" alt="Kalkulator UI" width="300"/>
 
 ---
 
