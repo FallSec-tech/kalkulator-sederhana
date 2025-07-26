@@ -4,7 +4,7 @@ Kalkulator GUI modern menggunakan **Python** dan **ttkbootstrap**, dengan fitur:
 - ✅ Tampilan keren & responsif
 - 🌗 Dark Mode
 - 🔊 Suara klik tombol (menggunakan `pygame`)
-- 👨‍💻 Dibuat dengan cinta oleh FallSec-tech (Faiq Naufal)
+- 👨‍💻 by FallSec-Tech
 
 ---
 
