@@ -24,11 +24,7 @@ class KalkulatorApp:
         self.display_var = ttk.StringVar()
         self.display = ttk.Entry(root, textvariable=self.display_var, font=('Helvetica', 20), justify='right', bootstyle="success")
         self.display.pack(fill=X, padx=10, pady=15)
-
-        # Tombol
-        button.bind("<Enter>", lambda e, b=button: b.configure(bootstyle="info"))
-        button.bind("<Leave>", lambda e, b=button: b.configure(bootstyle="dark" if btn not in "=C" else ("danger" if btn == 'C' else "success")))
-
+        
         buttons = [
             ['7', '8', '9', '/'],
             ['4', '5', '6', '*'],
@@ -37,17 +33,21 @@ class KalkulatorApp:
             ['=']
         ]
 
-        for row in buttons:
-            frame = ttk.Frame(root)
-            frame.pack(padx=10, pady=5, fill=X)
-            for btn in row:
-                button = ttk.Button(
-                master=frame,
-                text=btn,
-                bootstyle="dark" if btn not in "=C" else ("danger" if btn == 'C' else "success"),
-                command=lambda b=btn: self.button_click(b)
-)
-                button.pack(side=LEFT, expand=True, fill=X, padx=3, pady=2)
+        for btn in row:
+         button = ttk.Button(
+           master=frame,
+            text=btn,
+            bootstyle="dark" if btn not in "=C" else ("danger" if btn == 'C' else "success"),
+            command=lambda b=btn: self.button_click(b)
+            )
+        button.pack(side=LEFT, expand=True, fill=X, padx=3, pady=2)
+
+        # 🔥 Tambahkan hover bind DI SINI (masih di dalam loop)
+        button.bind("<Enter>", lambda e, b=button: b.configure(bootstyle="info"))
+        button.bind("<Leave>", lambda e, b=button, t=btn: b.configure(
+             bootstyle="dark" if t not in "=C" else ("danger" if t == 'C' else "success")
+         ))
+
 
 
     def button_click(self, char):
