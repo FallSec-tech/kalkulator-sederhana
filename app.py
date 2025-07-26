@@ -14,8 +14,8 @@ class KalkulatorApp:
         # Label Pembuat (Credit)
         credit_label = ttk.Label(
         root,
-        text="Dibuat oleh FallSec-tech 🧑‍💻",
-        font=("Helvetica", 10, "italic"),
+        text="By FallSec-Tech",
+        font=("Helvetica", 5, "italic"),
         anchor="center",
         bootstyle="secondary"
     )
